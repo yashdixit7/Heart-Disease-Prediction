@@ -35,11 +35,11 @@ st.sidebar.markdown("`OLD PEAK`:* 3.0 *")
 st.sidebar.markdown("`Number of Vessels colored`:* 0 *")
 
 
-cols = st.beta_columns(3)
+cols = st.columns(3)
 with cols[1]:
 	AGE = st.slider("| Age |", 20, 80)
 #--------------------------------------------------------------------!!
-cols = st.beta_columns(2)
+cols = st.columns(2)
 with cols[0]:
 	sex = st.selectbox("| Gender |",["Male","Female"])
 	if sex == "Male":
@@ -64,7 +64,7 @@ with cols[1]:
 #--------------------------------------------------------------------!!
 TRESTBPS = st.slider("| Blood Pressure (mmHg) |",90,200)
 #--------------------------------------------------------------------!!
-cols = st.beta_columns(3)
+cols = st.columns(3)
 with cols[1]:
 	fbs = st.selectbox("| Bood Sugar Level |",["Greater than 120 mg/dl"," Equal/Less than 120 mg/dl"])
 	if fbs=="Greater than 120 mg/dl":
@@ -74,7 +74,7 @@ with cols[1]:
 #--------------------------------------------------------------------!!
 CHOL = st.slider("| Serum Cholesterol (mg/dl) |",110,560)
 #--------------------------------------------------------------------!!
-cols = st.beta_columns(3)
+cols = st.columns(3)
 with cols[1]:
 	restecg = st.selectbox("| ECG |",["Normal", 
 												"Having ST-T wave abnormality",
@@ -88,7 +88,7 @@ with cols[1]:
 #--------------------------------------------------------------------!!
 THALACH = st.slider("| Maximum Heart Rate |",71,200)
 #--------------------------------------------------------------------!!
-cols = st.beta_columns(3)
+cols = st.columns(3)
 with cols[0]:
 	exang = st.selectbox("| Chest Pain due to Exercise |",["Yes","No"])
 	if exang == "Yes":
